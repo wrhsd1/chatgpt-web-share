@@ -51,6 +51,7 @@ class OpenaiWebChatModels(BaseChatModelEnum):
 class OpenaiApiChatModels(BaseChatModelEnum):
     gpt_3_5 = auto()
     gpt_4 = auto()
+    gpt_4_image = auto()
 
 
 if __name__ == "__main__":
