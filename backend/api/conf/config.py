@@ -120,10 +120,11 @@ class OpenaiApiSetting(BaseModel):
     proxy: Optional[str] = None
     connect_timeout: int = Field(10, ge=1)
     read_timeout: int = Field(20, ge=1)
-    enabled_models: list[OpenaiApiChatModels] = ["gpt_3_5", "gpt_4"]
+    enabled_models: list[OpenaiApiChatModels] = ["gpt_3_5", "gpt_4", "gpt_4_image"]
     model_code_mapping: dict[OpenaiApiChatModels, str] = {
         "gpt_3_5": "gpt-3.5-turbo",
         "gpt_4": "gpt-4",
+        "gpt_4_image": "gpt-4-vision-preview"
     }
 
 
