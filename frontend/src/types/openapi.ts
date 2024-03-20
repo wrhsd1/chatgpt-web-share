@@ -548,7 +548,7 @@ export interface components {
        *   "read_timeout": 20,
        *   "enabled_models": [
        *     "gpt_3_5",
-       *     "gpt_4"
+       *     "gpt_4",
        *   ],
        *   "model_code_mapping": {
        *     "gpt_3_5": "gpt-3.5-turbo",
@@ -899,7 +899,7 @@ export interface components {
      * OpenaiApiChatModels
      * @enum {string}
      */
-    OpenaiApiChatModels: "gpt_3_5" | "gpt_4";
+    OpenaiApiChatModels: "gpt_3_5" | "gpt_4" | "gpt_4_image";
     /** OpenaiApiConversationHistoryDocument */
     OpenaiApiConversationHistoryDocument: {
       /**
